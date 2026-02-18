@@ -7,38 +7,19 @@
     combos {
         compatible = "zmk,combos";
 
-        bt_sel_3 {
-            bindings = <&bt3>;
-            key-positions = <42 30>;
-            layers = <2>;
-        };
-
-        bt_sel_4 {
-            bindings = <&bt4>;
-            key-positions = <30 18>;
-            layers = <2>;
-        };
-
-        enter_gaming {
-            bindings = <&sl 3>;
-            key-positions = <26 15 28>;
-            layers = <2>;
-        };
-
-        leave_gaming {
-            bindings = <&sl 0>;
-            key-positions = <31 20 33>;
-        };
-
-        grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <13 25>;
-            layers = <3>;
-        };
-
         bt_f_keys {
             bindings = <&mo 3>;
             key-positions = <40 41>;
+        };
+
+        win_mode {
+            bindings = <&sl 4>;
+            key-positions = <37 38>;
+        };
+
+        mac_mode {
+            bindings = <&sl 0>;
+            key-positions = <43 44>;
         };
     };
 
