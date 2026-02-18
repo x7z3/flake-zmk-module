@@ -10,16 +10,19 @@
         bt_f_keys {
             bindings = <&mo 3>;
             key-positions = <40 41>;
+            layers = <3>;
         };
 
         win_mode {
             bindings = <&sl 4>;
             key-positions = <37 38>;
+            layers = <4>;
         };
 
         mac_mode {
             bindings = <&sl 0>;
             key-positions = <43 44>;
+            layers = <0>;
         };
     };
 
