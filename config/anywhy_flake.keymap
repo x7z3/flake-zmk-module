@@ -21,6 +21,16 @@
             bindings = <&sl 0>;
             key-positions = <43 44>;
         };
+
+        l_studio {
+            bindings = <&studio_or_reset 0 0>;
+            key-positions = <0 5 40>;
+        };
+
+        r_studio {
+            bindings = <&studio_or_reset 0 0>;
+            key-positions = <6 41 11>;
+        };
     };
 
     macros {
@@ -104,6 +114,15 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        studio_or_reset: studio_or_reset {
+            compatible = "zmk,behavior-hold-tap";
+            label = "STUDIO_OR_RESET";
+            bindings = <&sys_reset>, <&studio_unlock>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
