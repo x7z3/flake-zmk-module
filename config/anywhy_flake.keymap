@@ -143,10 +143,10 @@
 
         sys {
             bindings = <
-&soft_off  &bt0        &bt1            &bt2      &bt3    &bt4      &bt_clr_0  &bt_clr_1  &bt_clr_2  &bt_clr_3  &bt_clr_4  &studio_unlock
-&kp F12    &kp F1      &kp F2          &kp F3    &kp F4  &kp F5    &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11
-&trans     &kp C_MENU  &kp SCROLLLOCK  &kp CLCK  &trans  &trans    &sl 4      &sl 0      &trans     &trans     &trans     &trans
-           &trans      &trans          &trans    &trans  &trans    &trans     &trans     &trans     &trans     &trans
+&soft_off  &trans      &trans          &trans    &trans  &trans    &bt0    &bt1    &bt2    &bt3    &bt4     &trans
+&kp F12    &kp F1      &kp F2          &kp F3    &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans     &kp C_MENU  &kp SCROLLLOCK  &kp CLCK  &trans  &trans    &sl 4   &sl 0   &trans  &trans  &trans   &trans
+           &trans      &trans          &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
