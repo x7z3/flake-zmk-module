@@ -127,6 +127,13 @@
 
             tapping-term-ms = <300>;
         };
+
+        three_press_soft_off: three_press_soft_off {
+            compatible = "zmk,behavior-tap-dance";
+            label = "THREE_PRESS_SOFT_OFF";
+            #binding-cells = <0>;
+            bindings = <&trans>, <&trans>, <&soft_off>;
+        };
     };
 
     keymap {
@@ -161,10 +168,10 @@
 
         sys {
             bindings = <
-&kp F12    &kp F1      &kp F2          &kp F3    &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&soft_off  &kp C_MENU  &kp SCROLLLOCK  &trans    &trans  &sl 4     &trans  &trans  &trans  &trans  &trans   &bt_switcher
-&trans     &trans      &trans          &kp CLCK  &trans  &sl 0     &trans  &trans  &trans  &trans  &trans   &trans
-           &trans      &trans          &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp F12                &kp F1      &kp F2          &kp F3    &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&three_press_soft_off  &kp C_MENU  &kp SCROLLLOCK  &trans    &trans  &sl 4     &trans  &trans  &trans  &trans  &trans   &bt_switcher
+&trans                 &trans      &trans          &kp CLCK  &trans  &sl 0     &trans  &trans  &trans  &trans  &trans   &trans
+                       &trans      &trans          &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
