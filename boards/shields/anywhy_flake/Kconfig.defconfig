@@ -1,19 +1,32 @@
-if SHIELD_ANYWHY_FLAKE_LEFT
+# if SHIELD_ANYWHY_FLAKE_LEFT
+#
+# config ZMK_KEYBOARD_NAME
+#     default "Anywhy Flake"
+#
+# config ZMK_SPLIT_ROLE_CENTRAL
+#     default y
+#
+# config ZMK_STUDIO
+#     default y
+#
+# endif
 
-config ZMK_KEYBOARD_NAME
-    default "Anywhy Flake"
+if SHIELD_ANYWHY_FLAKE_LEFT || SHIELD_ANYWHY_FLAKE_RIGHT || SHIELD_ANYWHY_FLAKE_DONGLE
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-config ZMK_STUDIO
+config ZMK_SPLIT
     default y
 
 endif
 
-if SHIELD_ANYWHY_FLAKE_LEFT || SHIELD_ANYWHY_FLAKE_RIGHT
+if SHIELD_ANYWHY_FLAKE_DONGLE
 
-config ZMK_SPLIT
+config ZMK_KEYBOARD_NAME
+    default "Flake Dongle"
+
+config ZMK_SPLIT_ROLE_CENTRAL
     default y
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
 
 endif

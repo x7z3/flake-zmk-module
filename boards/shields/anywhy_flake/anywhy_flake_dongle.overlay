@@ -1,0 +1,15 @@
+#include "anywhy_flake.dtsi"
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+    };
+
+    // A dummy kscan for the dongle since it has no physical key matrix
+    mock_kscan: kscan {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
