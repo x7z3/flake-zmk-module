@@ -49,7 +49,7 @@
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         /* compatible = "sinowealth,sh1106"; */
-        reg = <0x3c>;
+        reg = <0x3d>;
         width = <128>;
         height = <64>;
         segment-offset = <2>;
