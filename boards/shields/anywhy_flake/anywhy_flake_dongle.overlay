@@ -47,7 +47,8 @@
     clock-frequency = <I2C_BITRATE_STANDARD>; /* Force 100 kHz I2C clock */
     
     oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
+        /* compatible = "solomon,ssd1306fb"; */
+        compatible = "sinowealth,sh1106";
         reg = <0x3c>;
         width = <128>;
         height = <64>;
